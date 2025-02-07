@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, yellow, orange);
+            text-align: center;
+            padding: 20px;
+        }
+        .cart-container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .empty-message {
+            color: #888;
+        }
+        .btn {
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="cart-container">
+        <h2>Items Selected In My Cart</h2>
+        <div id="cart-items"></div>
+        <button class="btn" onclick="clearCart()">Clear Cart</button>
+        <button class="btn" onclick="window.location.href='CD.html'">Back to Shop</button>
+    </div>
+ 
+    <script src="./shopping.js">
+        
+    </script>
+ 
+</body>
+</html>
