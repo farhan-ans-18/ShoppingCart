@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="navbar">Shopping Cart</div>
+    <div class="container">
+      <h2>FLOWERS</h2>
+      <div class="links">
+        <a href="./Books.html">📚 Books</a> | <a href="./CD.html">📀 CDs</a>
+      </div>
+      <div class="product">
+        <input type="checkbox" value="Rosa - rosa." />
+        <label>Rosa - rosa.</label>
+      </div>
+      <div class="product">
+        <input type="checkbox" value="Lily - lilium." />
+        <label>Lily - lilium.</label>
+      </div>
+      <div class="product">
+        <input type="checkbox" value="Tulipa - tulipa." />
+        <label>Tulipa - tulipa.</label>
+      </div>
+      <button type="submit" onclick="addToCart()">🛒 Add To Cart</button>
+      <button onclick="window.open('cartPage.html','_blank')">📦 View Cart</button>
+    </div>
+    <div class="footer">&copy; 2025 Shopping Cart. All rights reserved (Tavant).</div>
+    <script src="./shopping.js"></script>
+  </body>
+</html>
+
